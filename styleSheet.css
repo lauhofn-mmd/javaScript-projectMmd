@@ -134,6 +134,36 @@ body {
     }
 /* Limited Edition Ad block */
 
+/* Start infotekst */
+.infotekst {
+    margin: 75px 250px 75px 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.infotekst section {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.infotekst p {
+    color: #5E5C65;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.infotekst img {
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px  #D6D5CE;
+}
+/* Slut infotekst */
+
+
 
 /* Start footer */
     footer {
