@@ -28,6 +28,25 @@ body {
     #flexbox-menu div {
         margin: 10px;
     }
+
+    /* unvisited link */
+        #flexbox-menu a:link {
+        color: red;
+        text-decoration: none;
+    }
+
+    /* mouse over link */
+        #flexbox-menu a:hover {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    /* selected link */
+        #flexbox-menu a:active {
+        color: red;
+        text-decoration: underline;
+    }
+
 /* Navigationsmenu */
 
 
