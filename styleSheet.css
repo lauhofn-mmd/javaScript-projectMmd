@@ -134,6 +134,26 @@ body {
     }
 /* Limited Edition Ad block */
 
+/* Start reviews */
+.review { 
+    display: flex; 
+    justify-content: center; 
+    background-color: #8C714C;
+    width: 100%; 
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    gap: 60px;
+}
+
+.review p {
+    width: 200px;
+    text-align: center;
+    color: #d5cdc2;
+    font-size: 1.2rem;
+}
+/* Slut reviews */
+
 /* Start infotekst */
 .infotekst {
     margin: 75px 250px 75px 250px;
