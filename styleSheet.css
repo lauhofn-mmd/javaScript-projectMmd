@@ -28,17 +28,30 @@ body {
 
     #grid-topMenu div {
         color: #DBD4CB;
-        text-align: center;
     }
 
     #grid-topMenu .topMenu-tekst {
         color: #5E5C65;
         padding-top: 90px;
+        text-align: center;
+    }
+
+    #grid-topMenu .topMenu-venstre {
+        color: #5E5C65;
+        padding-top: 90px;
+        text-align: left;
     }
 
     #grid-topMenu img {
         height: 250px;
         width: auto;
+        padding-left: 120px;
+    }
+
+    #grid-topMenu .topMenu-icon {
+        float: right;
+        height: 20px;
+        width: 20px;
     }
 
 /* Slut på Top Menu */
