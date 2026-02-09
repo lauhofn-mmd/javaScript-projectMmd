@@ -98,3 +98,56 @@ body {
         font-size: 16px;
     }
 /* Limited Edition Ad block */
+
+/* Start footer */
+footer {
+    background-color: #8C714C;
+}
+
+.footer-nyhedsbrev {
+    margin: auto;
+    text-align: center;
+}
+
+.footer-nyhedsbrev h2 {
+    color: #F5F5F5;
+}
+
+.footer-nyhedsbrev p {
+    color: #DBD4CB;
+}
+
+.footer-nyhedsbrev input {
+    background-color: #8C714C;
+    border: solid 1px #DBD4CB;
+    border-radius: 5px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-container h3 {
+    color: #F5F5F5;
+}
+
+.footer-container p {
+    color: #DBD4CB;
+}
+
+.footer-menu a {
+    color: #3C353D;
+}
+
+.footer-trustpilot a {
+    color: #F5F5F5;
+}
+
+.footer-nyhedsbrev ::placeholder {
+    color: #DBD4CB;
+}
+
+/* Slut footer */
