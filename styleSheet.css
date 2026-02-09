@@ -134,6 +134,58 @@ body {
     }
 /* Limited Edition Ad block */
 
+/* Start products */
+.products h2 {
+    margin-top: 50px;
+    margin-left: 210px;
+}
+
+.products-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 210px;
+}
+.products-cards div {
+    background-color: #F1F0E8;
+    box-shadow: 10px 10px 25px  #D6D5CE;
+    border-radius: 20px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.products-cards img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.products-cards a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #2E2A39;
+}
+
+.product-title {
+    text-align: center;
+}
+
+.products-cards button {
+    color: #2E2A39;
+    background-color: #FDFBF8;
+    width: 70%;
+    border: solid 1px #8C8890;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+/* Slut products */
+
 /* Start reviews */
 .review { 
     display: flex; 
