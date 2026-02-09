@@ -16,6 +16,33 @@ body {
     }
 /* Header oppe i toppen af siden */
 
+/* Top Menu */
+
+    #grid-topMenu {
+        display: grid;
+        grid-template: 200px / 4fr 7fr 1fr 1fr 1fr 1fr;
+        width: 1100px;
+        height: 270px;
+        margin: auto;
+    }
+
+    #grid-topMenu div {
+        color: #DBD4CB;
+        text-align: center;
+    }
+
+    #grid-topMenu .topMenu-tekst {
+        color: #5E5C65;
+        padding-top: 90px;
+    }
+
+    #grid-topMenu img {
+        height: 250px;
+        width: auto;
+    }
+
+/* Slut på Top Menu */
+
 
 /* Navigationsmenu */
     #flexbox-menu {
@@ -23,6 +50,7 @@ body {
         margin: auto;
         padding: 10px;
         justify-content: center;
+        margin-bottom: 80px;
     }
 
     #flexbox-menu div {
@@ -31,19 +59,13 @@ body {
 
     /* unvisited link */
         #flexbox-menu a:link {
-        color: red;
+        color: #5E5C65;
         text-decoration: none;
     }
 
     /* mouse over link */
         #flexbox-menu a:hover {
-        color: grey;
-        text-decoration: underline;
-    }
-
-    /* selected link */
-        #flexbox-menu a:active {
-        color: red;
+        color:  #2e2a39;
         text-decoration: underline;
     }
 
@@ -99,55 +121,57 @@ body {
     }
 /* Limited Edition Ad block */
 
+
 /* Start footer */
-footer {
-    background-color: #8C714C;
-}
+    footer {
+        background-color: #8C714C;
+    }
 
-.footer-nyhedsbrev {
-    margin: auto;
-    text-align: center;
-}
+    .footer-nyhedsbrev {
+        margin: auto;
+        text-align: center;
+    }
 
-.footer-nyhedsbrev h2 {
-    color: #F5F5F5;
-}
+    .footer-nyhedsbrev h2 {
+        color: #F5F5F5;
+        padding-top: 20px;
+    }
 
-.footer-nyhedsbrev p {
-    color: #DBD4CB;
-}
+    .footer-nyhedsbrev p {
+        color: #DBD4CB;
+    }
 
-.footer-nyhedsbrev input {
-    background-color: #8C714C;
-    border: solid 1px #DBD4CB;
-    border-radius: 5px;
-}
+    .footer-nyhedsbrev input {
+        background-color: #8C714C;
+        border: solid 1px #DBD4CB;
+        border-radius: 5px;
+    }
 
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-}
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
 
-.footer-container h3 {
-    color: #F5F5F5;
-}
+    .footer-container h3 {
+        color: #F5F5F5;
+    }
 
-.footer-container p {
-    color: #DBD4CB;
-}
+    .footer-container p {
+        color: #DBD4CB;
+    }
 
-.footer-menu a {
-    color: #3C353D;
-}
+    .footer-menu a {
+        color: #3C353D;
+    }
 
-.footer-trustpilot a {
-    color: #F5F5F5;
-}
+    .footer-trustpilot a {
+        color: #F5F5F5;
+    }
 
-.footer-nyhedsbrev ::placeholder {
-    color: #DBD4CB;
-}
+    .footer-nyhedsbrev ::placeholder {
+        color: #DBD4CB;
+    }
 
 /* Slut footer */
