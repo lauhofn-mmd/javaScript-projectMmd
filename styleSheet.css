@@ -16,47 +16,52 @@ body {
     }
 /* Header oppe i toppen af siden */
 
-/* Top Menu */
+/* NY FLEX TOP MENU */
 
-    #grid-topMenu {
-        display: grid;
-        grid-template: 200px / 4fr 7fr 1fr 1fr 1fr 1fr;
-        width: 1100px;
-        height: 270px;
-        margin: auto;
+    #flex-topMenu {
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
     }
 
-    #grid-topMenu div {
-        color: #DBD4CB;
-    }
-
-    #grid-topMenu .topMenu-tekst {
+    #flex-topMenu div {
+        padding: 5px;
+        width: 360px;
+        gap: 3px;
         color: #5E5C65;
-        padding-top: 90px;
-        text-align: center;
-        width: 20px;
     }
 
-    #grid-topMenu .topMenu-venstre {
-        color: #5E5C65;
-        padding-top: 90px;
+    #flex-topMenu #inner-flex-topMenu {
+        display: flex;
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    #flex-topMenu #inner-flex-topMenu div {
+        width: 60px;
+    }
+
+    #flex-topMenu #inner-flex-topMenu .topMenu-icon {
+        height: 18px;
+        width: 18px;
+    }
+
+    #flex-topMenu img {
+        height: 250px;
+        width: auto;
+        
+    }
+
+    #flex-topMenu #flex-topMenu-LEFT {
         text-align: left;
     }
 
-    #grid-topMenu img {
-        height: 250px;
-        width: auto;
-        padding-left: 120px;
+    #flex-topMenu #flex-topMenu-CENTER {
+        text-align: center;
     }
 
-    #grid-topMenu .topMenu-icon {
-        float: right;
-        height: 20px;
-        width: 20px;
-    }
-
-/* Slut på Top Menu */
-
+/* NY FLEX TOP MENU */
 
 /* Navigationsmenu */
     #flexbox-menu {
