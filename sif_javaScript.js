@@ -38,7 +38,8 @@ const translation = {
         blog: "Blog",
         limited_storTekst: "Four winter essentials Four oils - one complete winter care routine. The perfect Christmas gift set",
         button: "Shop now" + "Add to cart",
-        h2: "Meet our products" + "Subscribe to our emails",
+        h2: "Meet our products",
+        h2: "Subscribe to our emails",
         product_title1: "Organic Cold Pressed Almond Oil",
         product_title2: "Organic Cold pressed Apricot Kernel Oil",
         product_title3: "Organic Cold-Pressed Argan Oil",
@@ -50,7 +51,10 @@ const translation = {
         p: "Experience the essence of nature in its purest form with our 100% natural organic oils. Formulated without additives or artificial fragrances, our oils capture the true essence of nature and help create visible results for both skin and hair. Every drop is a testament to our commitment to Mother Earth—to simple and effective pampering for body and soul, without overexploiting her amazing gifts." + "Our oils are not only created with purity and sustainability in mind, but also based on principles of compassion for all creatures on earth. We believe that every self-care routine should be based on consideration, thoughtfulness, and respect for other beings, which is why our products are 100% vegan and free from any animal ingredients." + "This also means that you can be sure that our oils are produced according to clear ethical standards, without any form of animal testing. By buying cruelty-free products, you are helping to pave the way for a future where respect for animals and beauty care go hand in hand." + "Sign up for our email list for exclusive offers and the latest news." +
         "Danish Webstore Group ApS" + "Møllevej 2A" + "9240 Nibe" + "CVR: 37640263" + "Mail: info@oilsbynature.dk" + "Easy ordering and fast delivery." + "We dispatch all orders daily." + "Quick delivery in 2-4 days." +
         "Business terms and conditions" + "Cookie- and privacy policy" + "We appriciate your opinion!" + "Make sure you rate your experience on Trustpilot" + "Contact" + "Work with us" + "Return policy",
-        h3: "Oils By Nature" + "Secure Shipping" + "Menu" + "Trustpilot",
+        h3: "Oils By Nature",
+        h3: "Secure Shipping",
+        h3: "Menu",
+        h3: "Trustpilot",
     },
 
     de: {
