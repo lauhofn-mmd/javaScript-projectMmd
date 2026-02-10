@@ -1,3 +1,5 @@
+console.log("This js is running...");
+
 const translation = {
     dk: {
         header: "Velkommen til OilsByNature",
