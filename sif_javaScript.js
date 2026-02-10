@@ -86,12 +86,21 @@ languageSelectop.addEventListener("change", (event) => {
     setLanguage(event.target.value)
 })
 
+let h3 = document.getElementById("h3");
+let h2 = document.getElementById("h2");
+
 const setLanguage = (language) => {
     if (language == "dk"){
-        console.log(language);
+        h2.innerText = translation.dk.select;
+        h3.innerText = translation.dk.select;
+
+
     }else if (language == "en"){
-        console.log(language);
+        h2.innerText = translation.en.select;
+        h3.innerText = translation.en.select;
+
     }else if (language == "de"){
-        console.log(language)
+        h2.innerText = translation.de.select;
+        h3.innerText = translation.de.select;
     }
 }
