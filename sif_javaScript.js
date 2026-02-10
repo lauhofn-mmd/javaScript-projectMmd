@@ -96,15 +96,15 @@ let h2 = document.getElementById("h2");
 const setLanguage = (language) => {
     if (language == "dk"){
         h2.innerText = translation.dk.h2;
-        h3.innerText = translation.dk.select;
+        h3.innerText = translation.dk.h3;
 
 
     }else if (language == "en"){
-        h2.innerText = translation.en.select;
-        h3.innerText = translation.en.select;
+        h2.innerText = translation.en.h2;
+        h3.innerText = translation.en.h3;
 
     }else if (language == "de"){
-        h2.innerText = translation.de.select;
-        h3.innerText = translation.de.select;
+        h2.innerText = translation.de.h2;
+        h3.innerText = translation.de.h3;
     }
 }
