@@ -155,16 +155,16 @@ let h2 = document.getElementById("h2_1", "h2_2");
 
 const setLanguage = (language) => {
     if (language == "dk"){
-        h2.innerText = translation.dk.h2;
-        h3.innerText = translation.dk.h3;
+        h2.innerText = translation.dk.h2_1, h2_2;
+        h3.innerText = translation.dk.h3_1, h3_2, h3_3, h3_4;
 
 
     }else if (language == "en"){
-        h2.innerText = translation.en.h2;
-        h3.innerText = translation.en.h3;
+        h2.innerText = translation.en.h2_1, h2_2;
+        h3.innerText = translation.en.h3_1, h3_2, h3_3, h3_4;
 
     }else if (language == "de"){
-        h2.innerText = translation.de.h2;
-        h3.innerText = translation.de.h3;
+        h2.innerText = translation.de.h2_1, h2_2;
+        h3.innerText = translation.de.h3_1, h3_2, h3_3, h3_4;
     }
 }
