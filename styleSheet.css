@@ -291,9 +291,9 @@ body {
 .carousel-wrapper {
   width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: 1300px;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 auto 4% auto;
 }
 
 .carousel {
