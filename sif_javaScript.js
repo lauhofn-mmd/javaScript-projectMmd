@@ -95,7 +95,7 @@ let h2 = document.getElementById("h2");
 
 const setLanguage = (language) => {
     if (language == "dk"){
-        h2.innerText = translation.dk.select;
+        h2.innerText = translation.dk.h2;
         h3.innerText = translation.dk.select;
 
 
