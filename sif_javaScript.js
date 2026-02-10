@@ -1,4 +1,4 @@
-console.log("This js is running...");
+console.log("sif.js is running...")
 
 const translation = {
     dk: {
