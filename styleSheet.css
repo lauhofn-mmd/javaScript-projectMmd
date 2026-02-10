@@ -212,6 +212,7 @@ body {
     gap: 60px;
 }
 
+
 .review p {
     width: 200px;
     text-align: center;
@@ -219,7 +220,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* new for: (sif-javascript.js)
+/*Sif responsive design for their HTML*/
 .review1 {
     width: 200px;
     text-align: center;
@@ -247,7 +248,7 @@ body {
     color: #d5cdc2;
     font-size: 1.2rem;
 }
-/*
+/*end responsive*/
 
 /* Slut reviews */
 
