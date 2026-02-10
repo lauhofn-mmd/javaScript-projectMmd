@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 body {
     background-color: #f0f4eb;
@@ -12,51 +13,56 @@ body {
         margin-top: 0;
         padding: 12px;
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
     }
 /* Header oppe i toppen af siden */
 
-/* Top Menu */
+/* NY FLEX TOP MENU */
 
-    #grid-topMenu {
-        display: grid;
-        grid-template: 200px / 4fr 7fr 1fr 1fr 1fr 1fr;
-        width: 1100px;
-        height: 270px;
-        margin: auto;
+    #flex-topMenu {
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
     }
 
-    #grid-topMenu div {
-        color: #DBD4CB;
-    }
-
-    #grid-topMenu .topMenu-tekst {
+    #flex-topMenu div {
+        padding: 5px;
+        width: 360px;
+        gap: 3px;
         color: #5E5C65;
-        padding-top: 90px;
-        text-align: center;
-        width: 20px;
     }
 
-    #grid-topMenu .topMenu-venstre {
-        color: #5E5C65;
-        padding-top: 90px;
+    #flex-topMenu #inner-flex-topMenu {
+        display: flex;
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    #flex-topMenu #inner-flex-topMenu div {
+        width: 60px;
+    }
+
+    #flex-topMenu #inner-flex-topMenu .topMenu-icon {
+        height: 18px;
+        width: 18px;
+    }
+
+    #flex-topMenu img {
+        height: 250px;
+        width: auto;
+        
+    }
+
+    #flex-topMenu #flex-topMenu-LEFT {
         text-align: left;
     }
 
-    #grid-topMenu img {
-        height: 250px;
-        width: auto;
-        padding-left: 120px;
+    #flex-topMenu #flex-topMenu-CENTER {
+        text-align: center;
     }
 
-    #grid-topMenu .topMenu-icon {
-        float: right;
-        height: 20px;
-        width: 20px;
-    }
-
-/* Slut på Top Menu */
-
+/* NY FLEX TOP MENU */
 
 /* Navigationsmenu */
     #flexbox-menu {
@@ -77,6 +83,12 @@ body {
         text-decoration: none;
     }
 
+    /* visitied link */
+        #flexbox-menu a:visited {
+        color: #5E5C65;
+        text-decoration: none;
+    }
+
     /* mouse over link */
         #flexbox-menu a:hover {
         color:  #2e2a39;
@@ -86,54 +98,61 @@ body {
 /* Navigationsmenu */
 
 
-/* Limited Edition Ad block */
-    #grid-limitedEdition {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        width: 1100px;
-        margin: auto;
+/* NY LIMITED EDITION AD BLOCK */
+
+    #flex-limitedEdition {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
     }
 
-    #grid-limitedEdition div {
-        background-color: #8b6f4b;;
-        margin: 2px;
-        padding: 0;
+    #flex-limitedEdition div {
+        background-color:  #8b6f4b;;
         text-align: center;
         border-radius: 10px;
     }
 
-    #grid-limitedEdition p {
+    #flex-limitedEdition .inner-flex-limitedEdition {
+        display: flex;
+        flex-direction: column;
         color: #f0f4eb;
+        padding: 10px;
+        justify-content: center;
+        height: 90%;
+    }
+
+    #flex-limitedEdition .inner-flex-limitedEdition div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #flex-limitedEdition .inner-flex-limitedEdition .inner-flex-text {
         font-size: 20px;
+        padding: 10px;
     }
 
-    #grid-limitedEdition h3 {
-        color: #d5cdc2;
-        font-weight: 100;
-        margin-top: 50px;
+    #flex-limitedEdition .inner-flex-limitedEdition .inner-flex-rubrik {
+        font-size: 33px;
     }
 
-    #grid-limitedEdition #limited-storTekst {
-        font-size: 35px;
-        margin: 0;
-    }
-
-
-    #grid-limitedEdition img {
+    #flex-limitedEdition img { 
         width: 110%;
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
     }
 
-    #grid-limitedEdition button {
+    #flex-limitedEdition button {
         padding: 10px 25px;
         background-color: #2e2a39;
         color: #f0f4eb;
         border-radius: 10px;
         font-size: 16px;
+        margin: 10px;
     }
-/* Limited Edition Ad block */
+
+/* NY LIMITED EDITION AD BLOCK */
+
 
 /* Start products */
 .products h2 {
@@ -199,12 +218,44 @@ body {
     gap: 60px;
 }
 
+
 .review p {
     width: 200px;
     text-align: center;
     color: #d5cdc2;
     font-size: 1.2rem;
 }
+
+/*Sif responsive design for their HTML*/
+.review1 {
+    width: 200px;
+    text-align: center;
+    color: #d5cdc2;
+    font-size: 1.2rem;
+}
+
+.review2 {
+    width: 200px;
+    text-align: center;
+    color: #d5cdc2;
+    font-size: 1.2rem;
+}
+
+.review3 {
+    width: 200px;
+    text-align: center;
+    color: #d5cdc2;
+    font-size: 1.2rem;
+}
+
+.review4 {
+    width: 200px;
+    text-align: center;
+    color: #d5cdc2;
+    font-size: 1.2rem;
+}
+/*end responsive*/
+
 /* Slut reviews */
 
 /* Start infotekst */
@@ -326,3 +377,24 @@ body {
     }
 
 /* Slut footer */
+
+
+/* MEDIA QUERY */ 
+
+    /* Mobile Version */
+    @media only screen and (max-width: 520px) {
+        /* body {background-color: red;} */
+    }
+
+    /* Tablet Version */
+    @media only screen and (min-width: 521px) {
+        /* body {background-color: pink;} */
+    }
+
+    /* Computer Version */
+    @media only screen and (min-width: 899px) {
+        /* body {background-color: rgb(14, 6, 7);} */
+    }
+
+
+/* MEDIA QUERY */ 
