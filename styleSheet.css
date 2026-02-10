@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 body {
     background-color: #f0f4eb;
@@ -335,3 +336,24 @@ body {
     }
 
 /* Slut footer */
+
+
+/* MEDIA QUERY */ 
+
+    /* Mobile Version */
+    @media only screen and (max-width: 520px) {
+        /* body {background-color: red;} */
+    }
+
+    /* Tablet Version */
+    @media only screen and (min-width: 521px) {
+        /* body {background-color: pink;} */
+    }
+
+    /* Computer Version */
+    @media only screen and (min-width: 899px) {
+        /* body {background-color: rgb(14, 6, 7);} */
+    }
+
+
+/* MEDIA QUERY */ 
