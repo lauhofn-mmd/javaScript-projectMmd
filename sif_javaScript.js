@@ -85,9 +85,11 @@ languageSelectop.addEventListener("change", (event) => {
 })
 
 const setLanguage = (language) => {
-    if (language == "en"){
+    if (language == "dk"){
         console.log(language);
     }else if (language == "en"){
+        console.log(language)
+    }else if (language == "de"){
         console.log(language)
     }
 }
