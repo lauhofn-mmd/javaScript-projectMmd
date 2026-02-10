@@ -112,7 +112,7 @@ languageSelectop.addEventListener("change", (event) => {
 })
 
 let h3 = document.getElementById("h3");
-let h2 = document.getElementById("h2");
+let h2 = document.getElementById("h2_1")+("h2_2");
 
 const setLanguage = (language) => {
     if (language == "dk"){
