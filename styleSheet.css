@@ -13,9 +13,9 @@ body {
         margin-top: 0;
         padding: 12px;
         text-align: center;
-        font-size: 15px;
+        font-size: 18px;
     }
-/* Header oppe i toppen af siden */
+/* Header oppe i toppen af siden */  /* Lau er i gang med at ændre værdier til Mobile Version */
 
 /* NY FLEX TOP MENU */
 
@@ -28,7 +28,7 @@ body {
 
     #flex-topMenu div {
         padding: 5px;
-        width: 360px;
+        width: 120px;
         gap: 3px;
         color: #5E5C65;
     }
@@ -37,6 +37,10 @@ body {
         display: flex;
         text-align: right;
         justify-content: flex-end;
+    }
+
+    .selector {
+        visibility: hidden;
     }
 
     #flex-topMenu #inner-flex-topMenu div {
@@ -49,18 +53,97 @@ body {
     }
 
     #flex-topMenu img {
-        height: 250px;
+        height: 150px;
         width: auto;
         
     }
 
     #flex-topMenu #flex-topMenu-LEFT {
         text-align: left;
+        visibility: hidden;
+    }
+
+    #flex-topMenu #flex-topMenu-LEFT .openbtn {
+        visibility: visible;
     }
 
     #flex-topMenu #flex-topMenu-CENTER {
         text-align: center;
     }
+
+    /* Navigatoinsknap Mobile Version */
+    /* Style the button that is used to open the sidepanel */
+        .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        color: #444;
+        padding: 10px;
+        border: none;
+        background-color: #f0f4eb;
+        }
+
+        .openbtn:hover {
+        font-size: 21px;
+        }
+    /* Navigatoinsknap Mobile Version */
+
+    /* Mobile Navigation Menu Style */
+        /* The sidepanel menu */
+        .sidepanel {
+        height: 300px; /* Specify a height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #f0f4eb; 
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        }
+
+        /* The sidepanel links */
+        .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #444;
+        display: block;
+        transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidepanel a:hover {
+        background-color: #d7d8d5;
+        }
+
+        /* Position and style the close button (top left corner) */
+        .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        font-size: 35px;
+        }
+
+        .sidepanel .smallOption {
+            font-size: 17px;
+        }
+
+        /* Style the button that is used to open the sidepanel */
+        .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        color: #444;
+        padding: 10px 15px;
+        border: none;
+        background-color: #f0f4eb;
+        }
+
+        .openbtn:hover {
+            font-size: 21px;
+        }
+
+    /* Mobile Navigation Menu Style */
+
 
 /* NY FLEX TOP MENU */
 
@@ -71,6 +154,8 @@ body {
         padding: 10px;
         justify-content: center;
         margin-bottom: 80px;
+        font-size: 16px;
+        visibility: hidden;
     }
 
     #flexbox-menu div {
@@ -218,7 +303,6 @@ body {
     gap: 60px;
 }
 
-
 .review p {
     width: 200px;
     text-align: center;
@@ -226,7 +310,7 @@ body {
     font-size: 1.2rem;
 }
 
-/*Sif responsive design for their HTML*/
+/* new for: (sif-javascript.js)
 .review1 {
     width: 200px;
     text-align: center;
@@ -254,7 +338,7 @@ body {
     color: #d5cdc2;
     font-size: 1.2rem;
 }
-/*end responsive*/
+/*
 
 /* Slut reviews */
 
@@ -287,63 +371,6 @@ body {
 }
 /* Slut infotekst */
 
-/* Start slider */
-.carousel-wrapper {
-  width: 100%;
-  height: auto;
-  max-width: 1000px;
-  overflow: hidden;
-  margin: 0 auto 4% auto;
-}
-
-.carousel {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  transition: transform 0.4s ease;
-}
-
-.card {
-  flex: 0 0 calc((100% - 3rem) / 4); /* 4 cards visible */
-  margin-right: 1rem;
-  aspect-ratio: 1 / 1; /* square */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover; /* fills card without stretching */
-  display: block;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.card-inner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4); 
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.card:hover .card-inner::after {
-  opacity: 1;
-}
-
-
-/* Slut slider */
 
 
 /* Start footer */
@@ -401,22 +428,329 @@ body {
 /* Slut footer */
 
 
-/* MEDIA QUERY */ 
+/* MEDIA QUERY RESPONSIV DESIGN */ 
 
     /* Mobile Version */
-    @media only screen and (max-width: 520px) {
-        /* body {background-color: red;} */
-    }
+    /*@media only screen and (max-width: 520px) {}*/
 
-    /* Tablet Version */
-    @media only screen and (min-width: 521px) {
-        /* body {background-color: pink;} */
-    }
+
+    
 
     /* Computer Version */
-    @media only screen and (min-width: 899px) {
-        /* body {background-color: rgb(14, 6, 7);} */
+    @media only screen and (min-width: 650px) {
+        /* body {background-color: rgb(45, 176, 89);} /* Slettes når responsiv design er done */
+
+        #velkommen {
+            font-size: 18px;
+        }
+
+        /* Header oppe i toppen af siden */  /* Lau er i gang med at ændre værdier til Mobile Version */
+
+        /* NY FLEX TOP MENU */
+
+            #flex-topMenu {
+                display: flex;
+                padding: 5px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #flex-topMenu div {
+                padding: 5px;
+                width: 360px;
+                gap: 3px;
+                color: #5E5C65;
+            }
+
+            #flex-topMenu #inner-flex-topMenu {
+                display: flex;
+                text-align: right;
+                justify-content: flex-end;
+            }
+
+            #flex-topMenu #inner-flex-topMenu div {
+                width: 60px;
+            }
+
+            #flex-topMenu #inner-flex-topMenu .topMenu-icon {
+                height: 18px;
+                width: 18px;
+            }
+
+            .selector {
+                visibility: visible;  /* Gør Valuta og Sprog visisble i PC Navigation */
+            }
+
+            #flex-topMenu img {
+                height: 250px;
+                width: auto;
+                
+            }
+
+            #flex-topMenu #flex-topMenu-LEFT {
+                text-align: left;
+                visibility: visible;
+            }
+
+            #flex-topMenu #flex-topMenu-LEFT .openbtn {
+                visibility: hidden;
+            }
+
+            #flex-topMenu #flex-topMenu-CENTER {
+                text-align: center;
+            }
+
+        /* NY FLEX TOP MENU */
+
+        /* Navigationsmenu */
+            #flexbox-menu {
+                display: flex;
+                margin: auto;
+                padding: 10px;
+                justify-content: center;
+                margin-bottom: 80px;
+                font-size: 16px;
+                visibility: visible;
+            }
+
+            #flexbox-menu div {
+                margin: 10px;
+            }
+
+            /* unvisited link */
+                #flexbox-menu a:link {
+                color: #5E5C65;
+                text-decoration: none;
+            }
+
+            /* visitied link */
+                #flexbox-menu a:visited {
+                color: #5E5C65;
+                text-decoration: none;
+            }
+
+            /* mouse over link */
+                #flexbox-menu a:hover {
+                color:  #2e2a39;
+                text-decoration: underline;
+            }
+
+        /* Navigationsmenu */
+
+
+        /* NY LIMITED EDITION AD BLOCK */
+
+            #flex-limitedEdition {
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+            }
+
+            #flex-limitedEdition div {
+                background-color:  #8b6f4b;;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            #flex-limitedEdition .inner-flex-limitedEdition {
+                display: flex;
+                flex-direction: column;
+                color: #f0f4eb;
+                padding: 10px;
+                justify-content: center;
+                height: 90%;
+            }
+
+            #flex-limitedEdition .inner-flex-limitedEdition div {
+                display: flex;
+                justify-content: center;
+            }
+
+            #flex-limitedEdition .inner-flex-limitedEdition .inner-flex-text {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            #flex-limitedEdition .inner-flex-limitedEdition .inner-flex-rubrik {
+                font-size: 33px;
+            }
+
+            #flex-limitedEdition img { 
+                width: 110%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            #flex-limitedEdition button {
+                padding: 10px 25px;
+                background-color: #2e2a39;
+                color: #f0f4eb;
+                border-radius: 10px;
+                font-size: 16px;
+                margin: 10px;
+            }
+
+        /* NY LIMITED EDITION AD BLOCK */
+
+
+        /* Start products */
+        .products h2 {
+            margin-top: 50px;
+            margin-left: 210px;
+        }
+
+        .products-cards {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            margin-left: 210px;
+        }
+        .products-cards div {
+            background-color: #F1F0E8;
+            box-shadow: 10px 10px 25px  #D6D5CE;
+            border-radius: 20px;
+            width: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .products-cards img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px 10px 0 0;
+            object-fit: cover;
+        }
+
+        .products-cards a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #2E2A39;
+        }
+
+        .product-title {
+            text-align: center;
+        }
+
+        .products-cards button {
+            color: #2E2A39;
+            background-color: #FDFBF8;
+            width: 70%;
+            border: solid 1px #8C8890;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1.1rem;
+        }
+        /* Slut products */
+
+        /* Start reviews */
+        .review { 
+            display: flex; 
+            justify-content: center; 
+            background-color: #8C714C;
+            width: 100%; 
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            gap: 60px;
+        }
+
+        .review p {
+            width: 200px;
+            text-align: center;
+            color: #d5cdc2;
+            font-size: 1.2rem;
+        }
+
+
+        /* Start infotekst */
+        .infotekst {
+            margin: 75px 250px 75px 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .infotekst section {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .infotekst p {
+            color: #5E5C65;
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
+
+        .infotekst img {
+            height: 300px;
+            width: auto;
+            border-radius: 15px;
+            box-shadow: 10px 10px 25px  #D6D5CE;
+        }
+        /* Slut infotekst */
+
+
+
+        /* Start footer */
+            footer {
+                background-color: #8C714C;
+            }
+
+            .footer-nyhedsbrev {
+                margin: auto;
+                text-align: center;
+            }
+
+            .footer-nyhedsbrev h2 {
+                color: #F5F5F5;
+                padding-top: 20px;
+            }
+
+            .footer-nyhedsbrev p {
+                color: #DBD4CB;
+            }
+
+            .footer-nyhedsbrev input {
+                background-color: #8C714C;
+                border: solid 1px #DBD4CB;
+                border-radius: 5px;
+            }
+
+            .footer-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 50px;
+            }
+
+            .footer-container h3 {
+                color: #F5F5F5;
+            }
+
+            .footer-container p {
+                color: #DBD4CB;
+            }
+
+            .footer-menu a {
+                color: #3C353D;
+            }
+
+            .footer-trustpilot a {
+                color: #F5F5F5;
+            }
+
+            .footer-nyhedsbrev ::placeholder {
+                color: #DBD4CB;
+            }
+
+        /* Slut footer */
     }
 
 
-/* MEDIA QUERY */ 
+/* MEDIA QUERY RESPONSIV DESIGN */ 
