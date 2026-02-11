@@ -52,7 +52,7 @@ const carousel = document.querySelector("[data-target='carousel']");
 
 //Loop to display array
 for (let i = 0; i < carruselItems.length; i++) {
-  carousel.innerHTML += '<li class="card" data-target="card"><img src="' + carruselItems[i].src + '" alt="' + carruselItems[i].alt + '" class="' + carruselItems[i].className + '"></li>';
+  carousel.innerHTML += '<li class="card" data-target="card"><div class="card-inner"><img src="' + carruselItems[i].src + '" alt="' + carruselItems[i].alt + '" class="' + carruselItems[i].className + '"></div></li>';
 }
 
 
