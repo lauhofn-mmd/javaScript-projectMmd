@@ -221,8 +221,9 @@ const languageSelect2 = document.querySelector("#Language select");
 languageSelect2.addEventListener("change", function () {
   updateReview(this.value);
 });
+//end of reviews functionality--------
 
-//Setting up the ids to their objects (general):
+//Setting up individual functionality of each object with their objects (general):
 let velkommen = document.getElementById("velkommen");
 
 let flextopMenuLEFT = document.getElementById("flextopMenuLEFT");
