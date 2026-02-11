@@ -1,6 +1,6 @@
 console.log("sif.js is running...")
 
-//Translation menu array:
+//Translation Menu array:
 const menuTranslation = {
   dk: {
     hjem: "Hjem",
@@ -24,15 +24,29 @@ const menuTranslation = {
     blog: "Blog",
   }
 };
-//End of translation menu-------
+//End of Translation Menu-------
+
+//Flextop Menu translation array:
+const flexTopTranslations = {
+  dk: {
+    left: "Søg",
+    valuta: "Valuta"
+  },
+  en: {
+    left: "Search",
+    valuta: "Currency"
+  },
+  de: {
+    left: "Suche",
+    valuta: "Währung"
+  }
+};
+//End of Translation Menu-------
 
 //Translation (main) array:
-
 const translation = {
     dk: {
         velkommen: "Velkommen til OilsByNature",
-        flextopMenuLEFT: "Søg",
-        innerflextopMenu: "Valuta",
         limited_storTekst: "Vinterens fire essentials Fire olier - én komplet vinterplejerutine. Det perfekte julegavesæt",
         h2_1: "Mød vores produkter",
         h2_2: "Abonner på vores e-mails",
@@ -74,8 +88,6 @@ const translation = {
 
     en: {
         velkommen: "Welcome to OilsByNature",
-        flextopMenuLEFT: "Search",
-        innerflextopMenu: "Currency",
         limited_storTekst: "Four winter essentials Four oils - one complete winter care routine. The perfect Christmas gift set",
         h2_1: "Meet our products",
         h2_2: "Subscribe to our emails",
@@ -116,8 +128,6 @@ const translation = {
 
     de: {
         velkommen: "Willkommen bei OilsByNature",
-        flextopMenuLEFT: "Suche",
-        innerflextopMenu: "Währung",
         limited_storTekst: "Vier Winter-Essentials Vier Öle - eine komplette Winterpflege-Routine. Das perfekte Weihnachtsgeschenk-Set",
         h2_1: "Lernen Sie unsere Produkte kennen",
         h2_2: "Abonnieren Sie unsere E-Mails",
@@ -159,7 +169,7 @@ const translation = {
 
 //End of translation (main)--------
 
-//Button fuctionality when changing the language (to main):
+//"Button" fuctionality when changing the language (to main):
 const languageSelectop = document.querySelector("select");
 
 languageSelectop.addEventListener("change", (event) => {
@@ -168,7 +178,7 @@ languageSelectop.addEventListener("change", (event) => {
 //end of button fuctionality (to main)-------
 
 
-//Setting up a cleaner fuction for the menu only:
+//Setting up a cleaner fuction for "the menu only":
 function updateMenuLanguage(lang) {
   const t = menuTranslation[lang];
 
@@ -184,12 +194,35 @@ const languageSelector = document.querySelector("#Language select");
 languageSelector.addEventListener("change", function () {
   updateMenuLanguage(this.value);
 });
+
+updateMenuLanguage(languageSelector.value);
 //end of the menu fuctionality------
 
-//Initial load (default = dk):
-updateMenuLanguage(languageSelector.value);
+//"Flextop Menu" functionality:
+function updateFlexTop(language) {
+    const t = flexTopTranslations[language];
 
-//Product titles functionality:
+    // Left Text: (Søg / Search / Suche)
+    const leftBox = document.getElementById("flex-topMenu-LEFT");
+    if (leftBox) leftBox.textContent = t.left;
+
+    // Inner flex: "Valuta"
+    const innerFlex = document.getElementById("inner-flex-topMenu");
+    if (innerFlex) {
+        const firstDiv = innerFlex.querySelector("div"); //Only that div
+        if (firstDiv) firstDiv.textContent = t.valuta + "∨";
+    }
+}
+const languageSelector1 = document.querySelector("#Language select");
+
+languageSelector1.addEventListener("change", function () {
+    updateFlexTop(this.value);
+});
+
+updateFlexTop(languageSelector1.value);
+//End of flextop Menu----------
+
+//"Product titles" functionality:
 function updateProductTitles(language) {
   const t = translation[language];
 
@@ -206,7 +239,7 @@ languageSelect1.addEventListener("change", function () {
 });
 //end of the product titles functionality--------
 
-//Reviews functionality:
+//"Reviews" functionality:
 function updateReview(language) {
   const t = translation[language];
 
@@ -223,20 +256,16 @@ languageSelect2.addEventListener("change", function () {
 });
 //end of reviews functionality--------
 
-//Setting up individual functionality of each object with their objects (general):
+//Setting up "individual functionality of each object with their objects" (general):
 let velkommen = document.getElementById("velkommen");
-
-let flextopMenuLEFT = document.getElementById("flextopMenuLEFT");
 
 let h2_1 = document.getElementById("h2_1");
 let h2_2 = document.getElementById("h2_2");
 
 let h3_1 = document.getElementById("h3_1");
-
 let h3_2 = document.getElementById("h3_2");
 let h3_3 = document.getElementById("h3_3");
 let h3_4 = document.getElementById("h3_4");
-
 
 const setLanguage = (language) => {
     if (language == "dk"){
@@ -244,7 +273,6 @@ const setLanguage = (language) => {
 
         h2_1.innerText = translation.dk.h2_1;
         h2_2.innerText = translation.dk.h2_2;
-
         h3_1.innerText = translation.dk.h3_1, 
         h3_2.innerText = translation.dk.h3_2,
         h3_3.innerText = translation.dk.h3_3,
@@ -256,7 +284,6 @@ const setLanguage = (language) => {
 
         h2_1.innerText = translation.en.h2_1;
         h2_2.innerText = translation.en.h2_2;
-
         h3_1.innerText = translation.en.h3_1, 
         h3_2.innerText = translation.en.h3_2,
         h3_3.innerText = translation.en.h3_3,
@@ -267,7 +294,6 @@ const setLanguage = (language) => {
         
         h2_1.innerText = translation.de.h2_1;
         h2_2.innerText = translation.de.h2_2;
-
         h3_1.innerText = translation.de.h3_1, 
         h3_2.innerText = translation.de.h3_2,
         h3_3.innerText = translation.de.h3_3,
