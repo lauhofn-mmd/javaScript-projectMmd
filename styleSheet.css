@@ -187,6 +187,7 @@ body {
 
     #flex-limitedEdition {
         display: flex;
+        flex-direction: column-reverse;
         justify-content: center;
         padding: 5px;
     }
@@ -212,7 +213,7 @@ body {
     }
 
     #flex-limitedEdition .inner-flex-limitedEdition .inner-flex-text {
-        font-size: 20px;
+        font-size: 22px;
         padding: 10px;
     }
 
@@ -221,10 +222,18 @@ body {
     }
 
     #flex-limitedEdition img { 
-        width: 110%;
-        height: 100%;
+        width: 100%;
+        height: 110%;
         object-fit: cover;
         border-radius: 10px;
+    }
+
+    #adBlock-img {
+        flex-basis: 320px;
+    }
+
+    #adBlock-text {
+        flex-basis: 360px;
     }
 
     #flex-limitedEdition button {
@@ -542,6 +551,7 @@ body {
 
             #flex-limitedEdition {
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
                 padding: 5px;
             }
@@ -580,6 +590,14 @@ body {
                 height: 100%;
                 object-fit: cover;
                 border-radius: 10px;
+            }
+
+            #adBlock-img {
+                flex-basis: 737px;
+            }
+
+            #adBlock-text {
+                flex-basis: 357px;
             }
 
             #flex-limitedEdition button {
