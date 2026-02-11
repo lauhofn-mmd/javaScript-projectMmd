@@ -1,48 +1,83 @@
 //My array 
 const carruselItems = [
     {
-        src: "billeder/abrikos-main.webp",
-        alt: "Abrikoskerneolie på noget baggrund",
+        src: "billeder/slide-1.jpg",
+        alt: "Billede fra instagram",
         className: "carrusel-img"
     },
     {
-        src: "billeder/argan-main.webp",
-        alt: "Abrikoskerneolie på noget baggrund",
+        src: "billeder/slide-2.jpg",
+        alt: "Billede fra instagram",
         className: "carrusel-img"
     },
     {
-        src: "billeder/abrikos-main.webp",
-        alt: "Abrikoskerneolie på noget baggrund",
+        src: "billeder/slide-3.jpg",
+        alt: "Billede fra instagram",
         className: "carrusel-img"
     },
     {
-        src: "billeder/argan-main.webp",
-        alt: "Abrikoskerneolie på noget baggrund",
+        src: "billeder/slide-4.jpg",
+        alt: "Billede fra instagram",
         className: "carrusel-img"
     },
     {
-        src: "billeder/abrikos-main.webp",
-        alt: "Abrikoskerneolie på noget baggrund",
+        src: "billeder/slide-5.jpg",
+        alt: "Billede fra instagram",
         className: "carrusel-img"
     },
     {
-        src: "billeder/argan-main.webp",
-        alt: "Abrikoskerneolie på noget baggrund",
+        src: "billeder/slide-6.jpg",
+        alt: "Billede fra instagram",
         className: "carrusel-img"
     },
     {
-        src: "billeder/abrikos-main.webp",
-        alt: "Abrikoskerneolie på noget baggrund",
+        src: "billeder/slide-7.jpg",
+        alt: "Billede fra instagram",
         className: "carrusel-img"
     },
     {
-        src: "billeder/argan-main.webp",
-        alt: "Abrikoskerneolie på noget baggrund",
+        src: "billeder/slide-8.jpg",
+        alt: "Billede fra instagram",
         className: "carrusel-img"
     },
-    {
-        src: "billeder/abrikos-main.webp",
-        alt: "Abrikoskerneolie på noget baggrund",
+        {
+        src: "billeder/slide-9.jpg",
+        alt: "Billede fra instagram",
+        className: "carrusel-img"
+    },
+        {
+        src: "billeder/slide-10.jpg",
+        alt: "Billede fra instagram",
+        className: "carrusel-img"
+    },
+        {
+        src: "billeder/slide-11.jpg",
+        alt: "Billede fra instagram",
+        className: "carrusel-img"
+    },
+        {
+        src: "billeder/slide-12.jpg",
+        alt: "Billede fra instagram",
+        className: "carrusel-img"
+    },
+        {
+        src: "billeder/slide-13.jpg",
+        alt: "Billede fra instagram",
+        className: "carrusel-img"
+    },
+        {
+        src: "billeder/slide-14.jpg",
+        alt: "Billede fra instagram",
+        className: "carrusel-img"
+    },
+        {
+        src: "billeder/slide-15.jpg",
+        alt: "Billede fra instagram",
+        className: "carrusel-img"
+    },
+        {
+        src: "billeder/slide-16.jpg",
+        alt: "Billede fra instagram",
         className: "carrusel-img"
     }
 ];
