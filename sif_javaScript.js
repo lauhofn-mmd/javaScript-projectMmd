@@ -1,15 +1,35 @@
 console.log("sif.js is running...")
 
+//Translation array:
+const menuTranslation = {
+  dk: {
+    hjem: "Hjem",
+    butik: "Butik",
+    omOs: "Om os",
+    kontakt: "Kontakt",
+    blog: "Blog",
+  },
+  en: {
+    hjem: "Home",
+    butik: "Shop",
+    omOs: "About Us",
+    kontakt: "Contact",
+    blog: "Blog",
+  },
+  de: {
+    hjem: "Startseite",
+    butik: "Shop",
+    omOs: "Über uns",
+    kontakt: "Kontakt",
+    blog: "Blog",
+  }
+};
+
 const translation = {
     dk: {
-        header: "Velkommen til OilsByNature",
-        topMenu_venster: "Søg",
-        topMenu_tekst: "Valuta",
-        hjem: "Hjem",
-        butik: "Butik",
-        omOS: "Om os",
-        kontakt: "Kontakt",
-        blog: "Blog",
+        velkommen: "Velkommen til OilsByNature",
+        flextopMenuLEFT: "Søg",
+        innerflextopMenu: "Valuta",
         limited_storTekst: "Vinterens fire essentials Fire olier - én komplet vinterplejerutine. Det perfekte julegavesæt",
         h2_1: "Mød vores produkter",
         h2_2: "Abonner på vores e-mails",
@@ -50,14 +70,9 @@ const translation = {
     },
 
     en: {
-        header: "Welcome to OilsByNature",
-        topMenu_venster: "Search",
-        topMenu_tekst: "Currency",
-        hjem: "Home",
-        butik: "Shop",
-        omOS: "About Us",
-        kontakt: "Contact",
-        blog: "Blog",
+        velkommen: "Welcome to OilsByNature",
+        flextopMenuLEFT: "Search",
+        innerflextopMenu: "Currency",
         limited_storTekst: "Four winter essentials Four oils - one complete winter care routine. The perfect Christmas gift set",
         h2_1: "Meet our products",
         h2_2: "Subscribe to our emails",
@@ -97,14 +112,9 @@ const translation = {
     },
 
     de: {
-        header: "Willkommen bei OilsByNature",
-        topMenu_venster: "Suche",
-        topMenu_tekst: "Währung",
-        hjem: "Heim",
-        butik: "Genschäft",
-        omOS: "Om os",
-        kontakt: "Kontakt",
-        blog: "Blog",
+        velkommen: "Willkommen bei OilsByNature",
+        flextopMenuLEFT: "Suche",
+        innerflextopMenu: "Währung",
         limited_storTekst: "Vier Winter-Essentials Vier Öle - eine komplette Winterpflege-Routine. Das perfekte Weihnachtsgeschenk-Set",
         h2_1: "Lernen Sie unsere Produkte kennen",
         h2_2: "Abonnieren Sie unsere E-Mails",
@@ -144,27 +154,91 @@ const translation = {
     }
 }
 
+//button fuctionality when changing the language:
 const languageSelectop = document.querySelector("select");
 
 languageSelectop.addEventListener("change", (event) => {
     setLanguage(event.target.value)
 })
 
-let h3 = document.getElementById("h3_1", "h3_2", "h3_3", "h3_4");
-let h2 = document.getElementById("h2_1", "h2_2");
+//initial load (default = dk):
+updateMenuLanguage(languageSelector.value);
+//end of this fuction--------
+
+//setting up a clean fuctiong for the menu only:
+function updateMenuLanguage(lang) {
+  const t = menuTranslation[lang];
+
+  document.querySelector("#hjem a").textContent = t.hjem;
+  document.querySelector("#butik a").textContent = t.butik;
+  document.querySelector("#omOs a").textContent = t.omOs;
+  document.querySelector("#kontakt a").textContent = t.kontakt;
+  document.querySelector("#blog a").textContent = t.blog;
+}
+
+const languageSelector = document.querySelector("#Language select");
+
+languageSelector.addEventListener("change", function () {
+  updateMenuLanguage(this.value);
+});
+//end of this fuction--------
+
+//setting up the ids to their objects (general):
+let velkommen = document.getElementById("velkommen");
+
+
+let flextopMenuLEFT = document.getElementById("flextopMenuLEFT");
+let innerflextopMenu = document.getElementById("div")
+let limitedstorTekst = document.getElementById("limited_storTekst")
+
+let h2_1 = document.getElementById("h2_1");
+let h2_2 = document.getElementById("h2_2");
+let h3_1 = document.getElementById("h3_1");
+let h3_2 = document.getElementById("h3_2");
+let h3_3 = document.getElementById("h3_3");
+let h3_4 = document.getElementById("h3_4");
+
 
 const setLanguage = (language) => {
     if (language == "dk"){
-        h2.innerText = translation.dk.h2_1, h2_2;
-        h3.innerText = translation.dk.h3_1, h3_2, h3_3, h3_4;
+        velkommen.innerText = translation.dk.velkommen;
+
+        limitedstorTekst = translation.dk.limitedstorTekst
+
+        h2_1.innerText = translation.dk.h2_1;
+        h2_2.innerText = translation.dk.h2_2;
+
+        h3_1.innerText = translation.dk.h3_1, 
+        h3_2.innerText = translation.dk.h3_2,
+        h3_3.innerText = translation.dk.h3_3,
+        h3_4.innerText = translation.dk.h3_4;
 
 
     }else if (language == "en"){
-        h2.innerText = translation.en.h2_1, h2_2;
-        h3.innerText = translation.en.h3_1, h3_2, h3_3, h3_4;
+        velkommen.innerText = translation.en.velkommen;
+
+        limitedstorTekst = translation.en.limitedstorTekst
+        
+        h2_1.innerText = translation.en.h2_1;
+        h2_2.innerText = translation.en.h2_2;
+
+        h3_1.innerText = translation.en.h3_1, 
+        h3_2.innerText = translation.en.h3_2,
+        h3_3.innerText = translation.en.h3_3,
+        h3_4.innerText = translation.en.h3_4;
 
     }else if (language == "de"){
-        h2.innerText = translation.de.h2_1, h2_2;
-        h3.innerText = translation.de.h3_1, h3_2, h3_3, h3_4;
+        velkommen.innerText = translation.de.velkommen;
+
+        limitedstorTekst = translation.de.limitedstorTekst
+        
+        h2_1.innerText = translation.de.h2_1;
+        h2_2.innerText = translation.de.h2_2;
+
+        h3_1.innerText = translation.de.h3_1, 
+        h3_2.innerText = translation.de.h3_2,
+        h3_3.innerText = translation.de.h3_3,
+        h3_4.innerText = translation.de.h3_4;
     }
 }
+
