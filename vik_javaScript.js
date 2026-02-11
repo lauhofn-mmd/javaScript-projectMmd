@@ -61,10 +61,15 @@ function addHoverEffect(billede) {
     const hoverImg = billede.dataset.hover;
 
     billede.addEventListener('mouseover', () => {
-        billede.src = hoverImg;
+
+        if (hoverImg) {
+            billede.src = hoverImg;
+        }
+
     });
 
     billede.addEventListener('mouseout', () => {
         billede.src = mainImg;
     });
 }
+
