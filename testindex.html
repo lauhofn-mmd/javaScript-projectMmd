@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styleSheet.css">
 
     <script src="sif_javaScript.js" defer></script>
-    <script src="lau_javaScript.js" defer></script>
+    
 </head>
 
 <body>
@@ -22,9 +22,10 @@
 <section>
     <div id="flex-topMenu">
         <div id="flex-topMenu-LEFT">
-            <p id="left">Søg</p>
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <p id="menu-search">Søg</p>
+            <button class="openbtn" onclick="openNav()">&#9776;</button> <!-- Burger Knap Mobile -->
         </div>
+
 
         <div id="flex-topMenu-CENTER">
             <img src="billeder/logo.webp" alt=" ">
@@ -46,25 +47,19 @@
 </section>
 
 <!-- Burger menu -->
-<div id="mySidepanel" class="sidepanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Butik</a>
-    <a href="#">Om os</a>
-    <a href="#">Kontakt</a>
-    <a href="#">Blog</a>
-    <a class="smallOption" href="#">Søg</a>
-    <select>
-        <option value="dk">Dansk</option>
-        <option value="de">Deutsch</option>
-        <option value="en">English</option>
-    </select>
-    <a class="smallOption" href="#">Valuta &#x2228;</a>
-</div>
+                <div id="mySidepanel" class="sidepanel">
+                    
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Butik</a>
+                    <a href="#">Om os</a>
+                    <a href="#">Kontakt</a>
+                    <a href="#">Blog</a>
+                    <a class="smallOption" href="#">Søg</a>
+                    <a class="smallOption" href="#">Sprog &#x2228;</a>
+                    <a class="smallOption" href="#">Valuta &#x2228;</a>
+                </div>
 
-<!-- Navigation -->
-<section>
-    <div id="flexbox-menu">
-        <div id="hj
+                <script src="lau_javaScript.js"></script> <!-- Laus JavaScript -->
 
         <!-- Navigationsmenu -->
             <section> 
