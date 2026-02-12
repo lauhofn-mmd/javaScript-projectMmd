@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="da">
 
-    <head>
-        <title>OilsByNatureReplica</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styleSheet.css">
-        <script src="sif_javaScript.js" defer></script>
-        <script src="lau_javaScript.js" defer></script> 
-    </head>
+<head>
+    <title>OilsByNatureReplica</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <header>
-            <p id="velkommen">Velkommen til OilsByNature</p>
-        </header>
+    <link rel="stylesheet" href="styleSheet.css">
 
-        <!-- Ny flex top menu -->
-            <section>
-                <div id="flex-topMenu">
-                    <div id="flex-topMenu-LEFT">
-                        <p id="left">Søg</p>
-                        <button class="openbtn" onclick="openNav()">&#9776;</button> <!-- Burger Knap Mobile -->
-                    </div>
-                    
-                    <div id="flex-topMenu-CENTER">
-                        <img src="billeder/logo.webp" alt=" ">
-                    </div>
-                    <div id="inner-flex-topMenu">
-                        <div id="valuta" class="selector">Valuta &#x2228;</div>
-                        <div id = "Language" class="selector">
-                        <select name = "" id = "">
-                            <option value="dk">Dansk</option>
-                            <option value="de">Deutsch</option>
-                            <option value="en">English</option>
-                        </select>
-                        </div>
-                        <div>
-                            <img class="topMenu-icon" src="billeder/icons/user.png" alt=" ">
-                        </div>
-                        <div>
-                            <img class="topMenu-icon" src="billeder/icons/ny_market.png" alt=" ">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <!-- Ny flex top menu -->
+    <script src="sif_javaScript.js" defer></script>
+    <script src="lau_javaScript.js" defer></script>
+</head>
 
+<body>
 
-        <!-- Burger Menu når den åbnes -->
-                <div id="mySidepanel" class="sidepanel">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">Butik</a>
-                    <a href="#">Om os</a>
-                    <a href="#">Kontakt</a>
-                    <a href="#">Blog</a>
-                    <a class="smallOption" href="#">Søg</a>
-                    <select name = "" id = "">
-                            <option value="dk">Dansk</option>
-                            <option value="de">Deutsch</option>
-                            <option value="en">English</option>
-                    </select>
-                    <a class="smallOption" href="#">Valuta &#x2228;</a>
-                </div>
-        <!-- Top Menu med Logo -->
+<header>
+    <p id="velkommen">Velkommen til OilsByNature</p>
+</header>
+
+<!-- Top menu -->
+<section>
+    <div id="flex-topMenu">
+        <div id="flex-topMenu-LEFT">
+            <p id="left">Søg</p>
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <div id="flex-topMenu-CENTER">
+            <img src="billeder/logo.webp" alt=" ">
+        </div>
+
+        <div id="inner-flex-topMenu">
+            <div id="valuta" class="selector">Valuta &#x2228;</div>
+            <div id="Language" class="selector">
+                <select>
+                    <option value="dk">Dansk</option>
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div><img class="topMenu-icon" src="billeder/icons/user.png" alt=" "></div>
+            <div><img class="topMenu-icon" src="billeder/icons/ny_market.png" alt=" "></div>
+        </div>
+    </div>
+</section>
+
+<!-- Burger menu -->
+<div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Butik</a>
+    <a href="#">Om os</a>
+    <a href="#">Kontakt</a>
+    <a href="#">Blog</a>
+    <a class="smallOption" href="#">Søg</a>
+    <select>
+        <option value="dk">Dansk</option>
+        <option value="de">Deutsch</option>
+        <option value="en">English</option>
+    </select>
+    <a class="smallOption" href="#">Valuta &#x2228;</a>
+</div>
+
+<!-- Navigation -->
+<section>
+    <div id="flexbox-menu">
+        <div id="hj
 
         <!-- Navigationsmenu -->
             <section> 
