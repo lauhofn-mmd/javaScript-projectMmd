@@ -87,7 +87,7 @@ const carousel = document.querySelector("[data-target='carousel']");
 
 //Loop to display array
 for (let i = 0; i < carruselItems.length; i++) {
-  carousel.innerHTML += '<li class="card" data-target="card"><div class="card-inner"><img src="' + carruselItems[i].src + '" alt="' + carruselItems[i].alt + '" class="' + carruselItems[i].className + '"></div></li>';
+    carousel.innerHTML += '<li class="card" data-target="card"><div class="card-inner"><img src="' + carruselItems[i].src + '" alt="' + carruselItems[i].alt + '" class="' + carruselItems[i].className + '"></div></li>';
 }
 
 
@@ -108,11 +108,11 @@ const maxX = -(step * (cardCount - 4)); // Minus, we push left. Step is how far 
 
 // Function to move carousel automatically
 function autoSlide() {
-  offset -= step; // move one card left
-  if (offset < maxX) { //When there is no mere cards to see
-    offset = 0; // Start over
-  }
-  carousel.style.transform = `translateX(${offset}px)`; //Tells browser to move the thingt on screen
+    offset -= step; // move one card left
+    if (offset < maxX) { //When there is no mere cards to see
+        offset = 0; // Start over
+    }
+    carousel.style.transform = `translateX(${offset}px)`; //Tells browser to move the thingt on screen
 }
 
 // Run autoSlide every 2.5 seconds
