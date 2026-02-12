@@ -10,7 +10,7 @@ const menuContainer = document.getElementById("itemsMenu");
 
 for (let i = 0; i < menuItems.length; i++) {
     menuContainer.innerHTML += 
-  '<div id="' + menuItems[i].id + '">' +
+  '<div>' +
     '<a href="' + menuItems[i].href + '" target="' + menuItems[i].target + '">' + menuItems[i].name + '</a>' +
   '</div>';
 }
