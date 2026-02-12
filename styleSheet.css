@@ -136,11 +136,13 @@ body {
         padding: 10px 15px;
         border: none;
         background-color: #f0f4eb;
+        visibility: visible;
         }
 
         .openbtn:hover {
             font-size: 21px;
         }
+
 
     /* Mobile Navigation Menu Style */
 
