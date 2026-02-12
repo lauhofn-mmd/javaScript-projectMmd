@@ -1,3 +1,17 @@
+const menuItems = [
+    {id: "hjem", href:"#hjem", target:"_self", name:"Hjem"},
+    {id: "butik", href:"#butik", target:"_self", name:"Butik"},
+    {id: "omOs", href:"#omOs", target:"_self", name:"Om os"},
+    {id: "kontakt", href:"#kontakt", target:"_self", name:"kontakt"},
+    {id: "blog", href:"#blog", target:"_self", name:"blog"},
+];
+
+const menuContainer = document.getElementById(mySidepanel);
+
+for (let i = 0; i < menuItems.length; i++) {
+    menuContainer.innerHTML += '<div id="' + menuItems[i].id + '"><a href="' + menuItems[i].href + '"target="' + menuItems[i].target + '">' + menuItems[i].name + '</a></div>';
+}
+
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
 document.getElementById("mySidepanel").style.width = "500px";
