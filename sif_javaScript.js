@@ -219,7 +219,7 @@ function updateFlexTop(language) {
     const innerFlex = document.getElementById("inner-flex-topMenu");
     if (innerFlex) {
         const firstDiv = innerFlex.querySelector("div"); //Only that div
-        if (firstDiv) firstDiv.textContent = t.valuta + "∨";
+        if (firstDiv) firstDiv.textContent = t.valuta + " ∨";
     }
 }
 const languageSelector1 = document.querySelector("#Language select");
