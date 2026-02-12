@@ -4,6 +4,7 @@ const produkter = [
         alt: 'Mandelolie',
         link: '#',
         name: 'Økologisk Koldpresset Mandelolie',
+        class: 'product-title1',
         pris: '149,00 DKK',
         hover: 'billeder/mandel-second.webp',
     },
@@ -12,6 +13,7 @@ const produkter = [
         alt: 'Abrikos',
         link: '#',
         name: 'Økologisk Koldpresset Abrikosolie',
+        class: 'product-title2',
         pris: '149,00 DKK',
         hover: 'billeder/abrikos-second.webp',
     },
@@ -20,6 +22,7 @@ const produkter = [
         alt: 'Arganolie',
         link: '#',
         name: 'Økologisk Koldpresset Jojobaolie',
+        class: 'product-title3',
         pris: '149,00 DKK',
         hover: 'billeder/argan-second.webp',        
     },
@@ -28,6 +31,7 @@ const produkter = [
         alt: 'Arganolie',
         link: '#',
         name: 'Økologisk Koldpresset Mandelolie',
+        class: 'product-title4',
         pris: '149,00 DKK',
         hover: 'billeder/jojoba-second.webp',  
     }
@@ -43,9 +47,9 @@ for (let i = 0; i < produkter.length; i++) {
                  'alt="' + produkter[i].alt + '" ' +
                  'data-main="' + produkter[i].src + '" ' +
                  'data-hover="' + produkter[i].hover + '">' +
-            '<p class="product-title"><a href="' + produkter[i].link + '">' + produkter[i].name + '</a></p>' +
+            '<p class="' + produkter[i].class + '"><a href="' + produkter[i].link + '">' + produkter[i].name + '</a></p>' +
             '<p class="product-price">' + produkter[i].pris + '</p>' +
-            '<button>Læg i indkøbskurv</button>' +
+            '<button id="button2">Læg i indkøbskurv</button>' +
         '</div>';
 }
 
