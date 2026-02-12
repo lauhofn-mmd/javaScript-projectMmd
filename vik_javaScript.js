@@ -1,3 +1,4 @@
+// Har brugt chatGPT til sparring og vejledning visse steder
 const produkter = [ 
     {
         src: 'billeder/mandel-main.webp',

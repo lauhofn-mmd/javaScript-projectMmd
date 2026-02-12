@@ -41,6 +41,7 @@ const flexTopTranslations = {
     valuta: "Währung"
   }
 };
+
 //End of Translation Menu-------
 
 //Loop:

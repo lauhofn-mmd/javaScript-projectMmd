@@ -1,3 +1,6 @@
+//Har brugt chat til sparring og vejledning 
+//Inspieret fra side: https://codepen.io/Nathan_James/pen/BvNLzO?editors=1010
+
 //My array 
 const carruselItems = [
     {
