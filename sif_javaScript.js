@@ -43,6 +43,11 @@ const flexTopTranslations = {
 };
 //End of Translation Menu-------
 
+//Loop:
+for (let lang in flexTopTranslations) {
+  console.log(lang, flexTopTranslations[lang]);
+}
+
 //Translation (main) array:
 const translation = {
     dk: {
