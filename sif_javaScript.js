@@ -1,5 +1,6 @@
 console.log("sif.js is running...")
 
+//I used the object "array" literal method in a YouTube video called: "How to make your website with Multi Language | Multiple Languages" by Reda Tech رضا تك:
 //Translation Menu array:
 const menuTranslation = {
   dk: {
@@ -44,7 +45,7 @@ const flexTopTranslations = {
 
 //End of Translation Menu-------
 
-//Loop:
+//Loop for object literal = "let" and "in":
 for (let lang in flexTopTranslations) {
   console.log(lang, flexTopTranslations[lang]);
 }
@@ -191,8 +192,9 @@ languageSelectop.addEventListener("change", (event) => {
     setLanguage(event.target.value)
 });
 //end of button fuctionality (to main)-------
+//End of the method from the YouTube video.
 
-
+//The fuctionality of the query was supporter by CodePilot by correcting and giving me inspiration on how to make the method with the Menu translation:
 //Setting up a cleaner fuction for "the menu only":
 function updateMenuLanguage(lang) {
   const t = menuTranslation[lang];
@@ -213,6 +215,7 @@ languageSelector.addEventListener("change", function () {
 updateMenuLanguage(languageSelector.value);
 //end of the menu fuctionality------
 
+//Helped by CodePilot by inspiring and understanding what to do with multi IDs and classes in the HTML to work on the JavaScript:
 //"Flextop Menu" functionality:
 function updateFlexTop(language) {
     const t = flexTopTranslations[language];
@@ -261,8 +264,8 @@ languageSelectop.addEventListener("change", function () {
 });
 
 updateLimitedBox(languageSelectop.value);
-
 //End of Limited Text-----------
+//End of this method.
 
 //"Product titles" functionality:
 function updateProductTitles(language) {
@@ -324,7 +327,7 @@ updateButtons(languageSelect3.value);
 //End of buttons fuctionality--------
 
 
-
+//Inspiration of the method from a YouTube video called: "How to make your website with Multi Language | Multiple Languages" by Reda Tech رضا تك 
 //Setting up "individual functionality of each object with their objects" (general):
 let velkommen = document.getElementById("velkommen");
 let h2_1 = document.getElementById("h2_1");
@@ -444,4 +447,4 @@ const setLanguage = (language) => {
         p_19.innerText = translation.de.p_19;
     }
 }
-
+//End of the method from the YouTube video.
