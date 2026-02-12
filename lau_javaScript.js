@@ -15,6 +15,8 @@ for (let i = 0; i < menuItems.length; i++) {
   '</div>';
 }
 
+/* Hjælp og inspiration fra W3Schools */
+
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
 document.getElementById("mySidepanel").style.width = "500px";
