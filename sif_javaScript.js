@@ -47,7 +47,10 @@ const flexTopTranslations = {
 const translation = {
     dk: {
         velkommen: "Velkommen til OilsByNature",
-        limited_storTekst: "Vinterens fire essentials Fire olier - én komplet vinterplejerutine. Det perfekte julegavesæt",
+        limited_Title: "Limited Edition",
+        limited_line1: "Vinterens fire<br>essentials",
+        limited_line2: "Fire olier - én komplet<br>vinterplejerutine.",
+        limited_line3: "Det perfekte <br> julegavesæt",
         h2_1: "Mød vores produkter",
         h2_2: "Abonner på vores e-mails",
         product_title1: "Økologisk Koldpresset Mandelolie",
@@ -88,7 +91,10 @@ const translation = {
 
     en: {
         velkommen: "Welcome to OilsByNature",
-        limited_storTekst: "Four winter essentials Four oils - one complete winter care routine. The perfect Christmas gift set",
+        limited_Title: "Limited Edition",
+        limited_line1: "Four winter<br>essentials",
+        limited_line2: "Four oils - one complete<br>winter care routine.",
+        limited_line3: "The perfect<br>Christmas gift set",
         h2_1: "Meet our products",
         h2_2: "Subscribe to our emails",
         product_title1: "Organic Cold Pressed Almond Oil",
@@ -128,7 +134,10 @@ const translation = {
 
     de: {
         velkommen: "Willkommen bei OilsByNature",
-        limited_storTekst: "Vier Winter-Essentials Vier Öle - eine komplette Winterpflege-Routine. Das perfekte Weihnachtsgeschenk-Set",
+        limited_Title: "Limited Edition",
+        limited_line1: "Vier<br>Winter-Essentials",
+        limited_line2: "Vier Öle - eine komplette<br>Winterpflege-Routine.",
+        limited_line3: "Das perfekte Weihnachtsgeschenk-Set",
         h2_1: "Lernen Sie unsere Produkte kennen",
         h2_2: "Abonnieren Sie unsere E-Mails",
         product_title1: "Organisches Kaltgepresstes Mandelöl",
@@ -222,6 +231,33 @@ languageSelector1.addEventListener("change", function () {
 updateFlexTop(languageSelector1.value);
 //End of flextop Menu----------
 
+//"Limited text" functionality:
+function updateLimitedBox(language) {
+    const t = translation[language];
+
+    const container = document.getElementById("limited_storTekst"); //The id it comes from
+    if (!container) return;
+
+    const titleDiv = container.querySelector("div:nth-child(1)"); //the <div> of it
+    if (titleDiv) titleDiv.textContent = t.limited_title;
+
+    const line1 = container.querySelector(".inner-flex-rubrik"); //The class of limited_line1 is
+    if (line1) line1.innerHTML = t.limited_line1;
+
+    const textLines = container.querySelectorAll(".inner-flex-text"); //The class of limited_line 2 and 3
+
+    if (textLines[0]) textLines[0].innerHTML = t.limited_line2;
+    if (textLines[1]) textLines[1].innerHTML = t.limited_line3;
+}
+
+languageSelectop.addEventListener("change", function () {
+    updateLimitedBox(this.value);
+});
+
+updateLimitedBox(languageSelectop.value);
+
+//End of Limited Text-----------
+
 //"Product titles" functionality:
 function updateProductTitles(language) {
   const t = translation[language];
@@ -256,21 +292,65 @@ languageSelect2.addEventListener("change", function () {
 });
 //end of reviews functionality--------
 
+//Buttons functionality:
+function updateButtons(language) {
+    const t = translation[language];
+
+    // Update button1
+    const b1 = document.getElementById("button1");
+    if (b1) b1.textContent = t.button1;
+
+    // Update all button (1 and 2)
+    const buttons2 = document.querySelectorAll("#button2");
+    buttons2.forEach(btn => {
+        btn.textContent = t.button2;
+    });
+}
+
+// Hooking my Language selector
+const languageSelect3 = document.querySelector("#Language select");
+
+languageSelect3.addEventListener("change", function () {
+    updateButtons(this.value);
+});
+
+updateButtons(languageSelect3.value);
+//End of buttons fuctionality--------
+
+
+
 //Setting up "individual functionality of each object with their objects" (general):
 let velkommen = document.getElementById("velkommen");
-
 let h2_1 = document.getElementById("h2_1");
 let h2_2 = document.getElementById("h2_2");
-
 let h3_1 = document.getElementById("h3_1");
 let h3_2 = document.getElementById("h3_2");
 let h3_3 = document.getElementById("h3_3");
 let h3_4 = document.getElementById("h3_4");
+//time for the paragraphs:
+let p_1 = document.getElementById("p_1");
+let p_2 = document.getElementById("p_2");
+let p_3 = document.getElementById("p_3");
+let p_4 = document.getElementById("p_4");
+let p_5 = document.getElementById("p_5");
+let p_6 = document.getElementById("p_6");
+let p_7 = document.getElementById("p_7");
+let p_8 = document.getElementById("p_8");
+let p_9 = document.getElementById("p_9");
+let p_10 = document.getElementById("p_10");
+let p_11 = document.getElementById("p_11");
+let p_12 = document.getElementById("p_12");
+let p_13 = document.getElementById("p_13");
+let p_14 = document.getElementById("p_14");
+let p_15 = document.getElementById("p_15");
+let p_16 = document.getElementById("p_16");
+let p_17 = document.getElementById("p_17");
+let p_18 = document.getElementById("p_18");
+let p_19 = document.getElementById("p_19");
 
 const setLanguage = (language) => {
     if (language == "dk"){
         velkommen.innerText = translation.dk.velkommen;
-
         h2_1.innerText = translation.dk.h2_1;
         h2_2.innerText = translation.dk.h2_2;
         h3_1.innerText = translation.dk.h3_1, 
@@ -278,10 +358,29 @@ const setLanguage = (language) => {
         h3_3.innerText = translation.dk.h3_3,
         h3_4.innerText = translation.dk.h3_4;
 
+        p_1.innerText = translation.dk.p_1;
+        p_2.innerText = translation.dk.p_2;
+        p_3.innerText = translation.dk.p_3;
+        p_4.innerText = translation.dk.p_4;
+        p_5.innerText = translation.dk.p_5;
+        p_6.innerText = translation.dk.p_6;
+        p_7.innerText = translation.dk.p_7;
+        p_8.innerText = translation.dk.p_8;
+        p_9.innerText = translation.dk.p_9;
+        p_10.innerText = translation.dk.p_10;
+        p_11.innerText = translation.dk.p_11;
+        p_12.innerText = translation.dk.p_12;
+        p_13.innerText = translation.dk.p_13;
+        p_14.innerText = translation.dk.p_14;
+        p_15.innerText = translation.dk.p_15;
+        p_16.innerText = translation.dk.p_16;
+        p_17.innerText = translation.dk.p_17;
+        p_18.innerText = translation.dk.p_18;
+        p_19.innerText = translation.dk.p_19;
+
 
     }else if (language == "en"){
         velkommen.innerText = translation.en.velkommen;
-
         h2_1.innerText = translation.en.h2_1;
         h2_2.innerText = translation.en.h2_2;
         h3_1.innerText = translation.en.h3_1, 
@@ -289,15 +388,54 @@ const setLanguage = (language) => {
         h3_3.innerText = translation.en.h3_3,
         h3_4.innerText = translation.en.h3_4;
 
+        p_1.innerText = translation.en.p_1;
+        p_2.innerText = translation.en.p_2;
+        p_3.innerText = translation.en.p_3;
+        p_4.innerText = translation.en.p_4;
+        p_5.innerText = translation.en.p_5;
+        p_6.innerText = translation.en.p_6;
+        p_7.innerText = translation.en.p_7;
+        p_8.innerText = translation.en.p_8;
+        p_9.innerText = translation.en.p_9;
+        p_10.innerText = translation.en.p_10;
+        p_11.innerText = translation.en.p_11;
+        p_12.innerText = translation.en.p_12;
+        p_13.innerText = translation.en.p_13;
+        p_14.innerText = translation.en.p_14;
+        p_15.innerText = translation.en.p_15;
+        p_16.innerText = translation.en.p_16;
+        p_17.innerText = translation.en.p_17;
+        p_18.innerText = translation.en.p_18;
+        p_19.innerText = translation.en.p_19;
+
     }else if (language == "de"){
         velkommen.innerText = translation.de.velkommen;
-        
         h2_1.innerText = translation.de.h2_1;
         h2_2.innerText = translation.de.h2_2;
         h3_1.innerText = translation.de.h3_1, 
         h3_2.innerText = translation.de.h3_2,
         h3_3.innerText = translation.de.h3_3,
         h3_4.innerText = translation.de.h3_4;
+
+        p_1.innerText = translation.de.p_1;
+        p_2.innerText = translation.de.p_2;
+        p_3.innerText = translation.de.p_3;
+        p_4.innerText = translation.de.p_4;
+        p_5.innerText = translation.de.p_5;
+        p_6.innerText = translation.de.p_6;
+        p_7.innerText = translation.de.p_7;
+        p_8.innerText = translation.de.p_8;
+        p_9.innerText = translation.de.p_9;
+        p_10.innerText = translation.de.p_10;
+        p_11.innerText = translation.de.p_11;
+        p_12.innerText = translation.de.p_12;
+        p_13.innerText = translation.de.p_13;
+        p_14.innerText = translation.de.p_14;
+        p_15.innerText = translation.de.p_15;
+        p_16.innerText = translation.de.p_16;
+        p_17.innerText = translation.de.p_17;
+        p_18.innerText = translation.de.p_18;
+        p_19.innerText = translation.de.p_19;
     }
 }
 
