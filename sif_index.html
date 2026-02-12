@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styleSheet.css">
         <script src="sif_javaScript.js" defer></script>
-        <script src="lau_javaScript.js" defer></script> 
     </head>
 
     <body>
@@ -18,17 +17,13 @@
         <!-- Ny flex top menu -->
             <section>
                 <div id="flex-topMenu">
-                    <div id="flex-topMenu-LEFT">
-                        <p id="left">Søg</p>
-                        <button class="openbtn" onclick="openNav()">&#9776;</button> <!-- Burger Knap Mobile -->
-                    </div>
-                    
+                    <div id="left">Søg</div>
                     <div id="flex-topMenu-CENTER">
-                        <img src="billeder/logo.webp" alt=" ">
+                        <img src="billeder/logo.webp">
                     </div>
                     <div id="inner-flex-topMenu">
-                        <div id="valuta" class="selector">Valuta &#x2228;</div>
-                        <div id = "Language" class="selector">
+                        <div id="valuta">Valuta &#x2228;</div>
+                        <div id = "Language">
                         <select name = "" id = "">
                             <option value="dk">Dansk</option>
                             <option value="de">Deutsch</option>
@@ -46,24 +41,6 @@
             </section>
         <!-- Ny flex top menu -->
 
-
-        <!-- Burger Menu når den åbnes -->
-                <div id="mySidepanel" class="sidepanel">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">Butik</a>
-                    <a href="#">Om os</a>
-                    <a href="#">Kontakt</a>
-                    <a href="#">Blog</a>
-                    <a class="smallOption" href="#">Søg</a>
-                    <select name = "" id = "">
-                            <option value="dk">Dansk</option>
-                            <option value="de">Deutsch</option>
-                            <option value="en">English</option>
-                    </select>
-                    <a class="smallOption" href="#">Valuta &#x2228;</a>
-                </div>
-        <!-- Top Menu med Logo -->
-
         <!-- Navigationsmenu -->
             <section> 
                 <div id="flexbox-menu">
@@ -80,11 +57,11 @@
 <!-- NY LIMITED EDITION BOKS -->
             <section>
                 <div id="flex-limitedEdition">
-                    <div id="adBlock-img">
+                    <div style="flex-basis:737px">
                         <img src="billeder/index-starter.webp" alt=" ">
                     </div>
 
-                    <div id="adBlock-text">
+                    <div style = "flex-basis:357px">
                         <div id = "limited_storTekst" class = "inner-flex-limitedEdition">
                             <div id="limited_Title">Limited Edition</div>
                             <div id ="limited_line1" class="inner-flex-rubrik">Vinterens fire<br>essentials</div>
